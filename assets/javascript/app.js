@@ -57,12 +57,16 @@ $(document).ready(function () {
     })
 
     $(document).on('click', '.gif', function (response) {
-        console.log(response.target.data-state);
-        // if (this.attr('data-state') === 'still') {
-        //     this.attr('src', this.attr('data-animate'));
-        // } else {
-        //     this.attr('src', this.attr('data-still'));
-        // }
+        const clickedGif = $(response.target)
+        const dataState =  clickedGif.attr('data-state');
+        console.log('data state: ' + dataState);
+        if (dataState === 'still') {
+            clickedGif.attr('src', clickedGif.attr('data-animate'));
+            clickedGif.attr('data-state', 'animate');
+        } else {
+            clickedGif.attr('src', clickedGif.attr('data-still'));
+            clickedGif.attr('data-state', 'still');
+        }
     })
 
 

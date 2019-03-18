@@ -1,0 +1,9 @@
+#gifs{
+    display: block;
+    float: left;
+}
+
+#addGif{
+    display: block;
+    float: right;
+}

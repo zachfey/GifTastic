@@ -3,7 +3,32 @@
     float: left;
 }
 
+.gifDiv{
+    /* display: inline; */
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
 #addGif{
     display: block;
     float: right;
+}
+
+.btn{
+    margin: 2px;
+}
+
+.container{
+    background-color: lightgrey;
+}
+
+p{
+    margin-bottom: 1px;
+    font-weight: 900;
+    font-size: 12px;
+}
+
+main{
+    background-color: lightgrey;
 }

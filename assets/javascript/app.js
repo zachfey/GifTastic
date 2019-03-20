@@ -33,7 +33,7 @@ $(document).ready(function () {
 
         populateGifs: function (buttonID) {
             console.log('buttonid: ' + buttonID)
-            const queryURL = 'https://api.giphy.com/v1/gifs/search?api_key=nmP5ayP6N65Aw6RBzK4nzC1ZeUkl2wRf&limit=10&q=' + buttonID
+            const queryURL = 'https://api.giphy.com/v1/gifs/search?api_key=nmP5ayP6N65Aw6RBzK4nzC1ZeUkl2wRf&rating=PG13&limit=10&q=' + buttonID
 
             $.ajax({
                 url: queryURL,
